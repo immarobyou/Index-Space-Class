@@ -1,84 +1,84 @@
 * {
-	-webkit-touch-callout: none;
-	/* iOS Safari */
-	-webkit-user-select: none;
-	/* Safari */
-	-khtml-user-select: none;
-	/* Konqueror HTML */
-	-moz-user-select: none;
-	/* Firefox */
-	-ms-user-select: none;
-	/* Internet Explorer/Edge */
-	user-select: none;
-	/* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
   supported by Chrome and Opera */
 }
 
 body {
-	background-color: #fd9a3e;
+  background-color: #fd9a3e;
 }
 
 .grid {
-	display: grid;
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-top: 40px;
-	grid-template-columns: repeat(3, 1fr);
-	font-size: 2vw;
+  display: grid;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 2vw;
 }
 .grid div {
-	padding: 2vw;
-	margin: 0 0 -1px -1px;
-	border: 1px solid black;
-	transition: all 1.2s ease;
+  padding: 2vw;
+  margin: 0 0 -1px -1px;
+  border: 1px solid black;
+  transition: all 1.2s ease;
 }
 
 ._1x1 {
-	grid-column: auto/span 1;
-	grid-row: auto/span 1;
+  grid-column: auto/span 1;
+  grid-row: auto/span 1;
 }
 
 ._1x1 {
-	grid-column: auto/span 1;
+  grid-column: auto/span 1;
 }
 
 ._1x2 {
-	grid-column: auto/span 1;
+  grid-column: auto/span 1;
 }
 
 ._1x3 {
-	grid-column: auto/span 1;
+  grid-column: auto/span 1;
 }
 
 ._2x1 {
-	grid-column: auto/span 2;
+  grid-column: auto/span 2;
 }
 
 ._2x2 {
-	grid-column: auto/span 2;
+  grid-column: auto/span 2;
 }
 
 ._2x3 {
-	grid-column: auto/span 2;
+  grid-column: auto/span 2;
 }
 
 ._3x1 {
-	grid-column: auto/span 3;
+  grid-column: auto/span 3;
 }
 
 ._3x2 {
-	grid-column: auto/span 3;
+  grid-column: auto/span 3;
 }
 
 ._3x3 {
-	grid-column: auto/span 3;
+  grid-column: auto/span 3;
 }
 
 canvas {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: -1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
