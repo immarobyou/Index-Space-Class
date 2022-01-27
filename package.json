@@ -1,0 +1,23 @@
+{
+  "name": "index-space-class",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/style.scss css/style.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immarobyou/Index-Space-Class.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/immarobyou/Index-Space-Class/issues"
+  },
+  "homepage": "https://github.com/immarobyou/Index-Space-Class#readme",
+  "description": "",
+  "dependencies": {
+    "dart-sass": "^1.25.0"
+  }
+}

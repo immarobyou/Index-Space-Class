@@ -1,0 +1,55 @@
+* {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+																	supported by Chrome and Opera */
+}
+body {
+	background-color: rgb(253, 154, 62);
+}
+
+.grid {
+	display: grid;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 40px;
+	grid-template-columns: repeat(3, 1fr);
+	font-size: 2vw;
+
+	div {
+		padding: 2vw;
+		margin: 0 0 -1px -1px;
+		border: 1px solid black;
+		transition: all 1.2s ease;
+	}
+}
+
+._1x1 {
+	grid-column: auto / span 1;
+	grid-row: auto / span 1;
+}
+
+$columns: 3;
+$rows: 3;
+
+@mixin block-generator {
+	@for $i from 1 through $columns {
+		@for $j from 1 through $rows {
+			._#{$i}x#{$j} {
+				grid-column: auto / span $i;
+			}
+		}
+	}
+}
+
+@include block-generator();
+
+canvas {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
